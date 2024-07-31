@@ -1,0 +1,22 @@
+{
+  "fileName": "apply",
+  "api": [
+    { "url": "/sysApp/add", "method": "post" },
+    { "url": "/sysApp/del", "method": "post" },
+    { "url": "/sysApp/edit", "method": "post" },
+    { "url": "/sysApp/list", "method": "get" }
+  ],
+  "columns": [
+    { "title": "应用名称", "dataIndex": "appName" },
+    { "title": "应用编码", "dataIndex": "appCode" },
+    { "title": "排序", "dataIndex": "appSort" },
+    { "title": "创建时间", "dataIndex": "createTime" },
+    { "title": "修改时间", "dataIndex": "updateTime" }
+  ],
+  "formSchema": [
+    { "label": "应用名称", "field": "appName" },
+    { "label": "应用编码", "field": "appCode" },
+    { "label": "排序", "field": "appSort" }
+  ],
+  "searchFormSchema": [{ "label": "应用名称", "field": "appName" }]
+}
