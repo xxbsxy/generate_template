@@ -1,7 +1,6 @@
 import fs from "fs";
 
-import type { ApiList, Column, FormSchema } from "./type";
-
+import type { ApiList, Column, FormSchema } from "../type";
 
 let fileName = ''
 
@@ -14,7 +13,6 @@ let deleteMethod = ''
 let editMethod = ''
 
 let searchMethod = ''
-
 
 fs.readFile(__dirname + "/config.json", function (err, data) {
 	if (err) {
@@ -33,7 +31,7 @@ fs.readFile(__dirname + "/config.json", function (err, data) {
 
 	FileName = fileName.replace(fileName[0], fileName[0].toUpperCase());
 
-	fs.mkdir(__dirname + `/${fileName}`, () => { })
+	fs.mkdir(__dirname + `/${fileName}`, () => {})
 
 	generateApiFile(apiList);
 
@@ -254,12 +252,13 @@ const generateModal = () => {
     labelWidth: 90,
     schemas: formSchema,
     showActionButtonGroup: false,
+		baseColProps: { span: 23 }
   });
 
   const [registerModal, { setModalProps, closeModal }] = useModalInner(async (data) => {
     resetFields();
     isUpdate.value = data.isUpdate;
-    if (unref(isUpdate)) {
+    if (isUpdate.value) {
       setFieldsValue({...data.record});
     }
   });

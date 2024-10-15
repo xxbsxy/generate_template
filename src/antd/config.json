@@ -1,0 +1,48 @@
+[
+  {
+    "fileName": "label",
+    "api": [
+      { "url": "/Supplier/AddSupplier", "method": "post" },
+      { "url": "/Supplier/DeleteSupplier", "method": "post" },
+      { "url": "/Supplier/UpdateSupplier", "method": "post" },
+      { "url": "/Supplier/ShowSupplierPage", "method": "post" }
+    ],
+    "columns": [
+      { "title": "标签地址", "dataIndex": "labelAddress" },
+      { "title": "信号强度", "dataIndex": "signalIntensity" },
+      { "title": "电池电量", "dataIndex": "power" },
+      { "title": "使用状态", "dataIndex": "status" },
+      { "title": "基站地址", "dataIndex": "stationAddress" }
+    ],
+    "formSchema": [
+      { "label": "标签地址", "field": "labelAddress" },
+      { "label": "基站地址", "field": "stationAddress" }
+    ],
+    "searchFormSchema": [
+      { "label": "标签地址", "field": "labelAddress" },
+      { "label": "基站地址", "field": "stationAddress" }
+    ]
+  },
+  {
+    "fileName": "station",
+    "api": [
+      { "url": "/Supplier/AddSupplier1", "method": "post" },
+      { "url": "/Supplier/DeleteSupplier2", "method": "post" },
+      { "url": "/Supplier/UpdateSupplier2", "method": "post" },
+      { "url": "/Supplier/ShowSupplierPage2", "method": "post" }
+    ],
+    "columns": [
+      { "title": "基站IP", "dataIndex": "stationIp" },
+      { "title": "基站地址", "dataIndex": "stationAddress" },
+      { "title": "基站状态", "dataIndex": "status" }
+    ],
+    "formSchema": [
+      { "label": "基站IP", "field": "stationIp" },
+      { "label": "基站地址", "field": "stationAddress" }
+    ],
+    "searchFormSchema": [
+      { "label": "基站IP", "field": "stationIp" },
+      { "label": "基站地址", "field": "stationAddress" }
+    ]
+  }
+]

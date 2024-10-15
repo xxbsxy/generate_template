@@ -1,0 +1,26 @@
+{
+  "fileName": "device",
+  "api": [
+    { "url": "/v3/device", "method": "post" },
+    { "url": "/v3/device/del", "method": "post" },
+    { "url": "/v3/device/edit", "method": "post" },
+    { "url": "/v3/device/page", "method": "get" }
+  ],
+  "columns": [
+    { "title": "设备编号", "dataIndex": "devSn" },
+    { "title": "设备名称", "dataIndex": "devName" },
+    { "title": "设备IP", "dataIndex": "ip" },
+    { "title": "设备端口", "dataIndex": "port" },
+    { "title": "设备行", "dataIndex": "keyRow" },
+    { "title": "设备列", "dataIndex": "keyRank" }
+  ],
+  "formSchema": [
+    { "label": "设备编号", "field": "devSn" },
+    { "label": "设备名称", "field": "devName" },
+    { "label": "设备IP", "field": "ip" },
+    { "label": "设备端口", "field": "port" },
+    { "label": "设备行", "field": "keyRow" },
+    { "label": "设备列", "field": "keyRank" }
+  ],
+  "searchFormSchema": [{ "label": "devName", "field": "设备名称" }]
+}
